@@ -16,7 +16,7 @@ body {
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-image: url("drevo.jpeg");   
+    background-image: url("drevo.webp");   
     background-size: cover;                    
     background-position: center;
     background-repeat: no-repeat;
@@ -45,7 +45,7 @@ header {
 */
 header {
     text-align: center;
-    background-image: url("drevo_1.jpg"); /* Your background image */
+    background-image: url("drevo_1.webp"); /* Your background image */
     background-size: cover;                  /* Ensures it fills the header */
     background-position: center;             /* Center the image */
     color: white;
@@ -96,7 +96,7 @@ h1 {
 
 .contact {
     text-align: center;
-    background-image: url("drevo_1.jpg"); /* Your background image */
+    background-image: url("drevo_1.webp"); /* Your background image */
     background-size: cover;                  /* Ensures it fills the header */
     background-position: center;             /* Center the image */
     padding: 25px 20px;
@@ -177,11 +177,7 @@ th, td {
 }
 
 th {
-    background-image: url("drevo_1.jpg");   
-    background-size: cover;                    
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed; 
+    background-color: rgba(91, 45, 20, 1);    
     color: white;
 }
 
