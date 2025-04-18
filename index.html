@@ -10,25 +10,40 @@
     <title>Chata Ostružina & Půjčovna Elektrokol</title>
     
     <link rel="stylesheet" href="style.css" />
-    <link rel="preload" as="image" href="chata-ostruzina.webp" type="image/webp" />
-    <link rel="preload" as="image" href="elektrokola.webp" type="image/webp" />
+    <!-- <link rel="preload" as="image" href="chata-ostruzina.webp" type="image/webp" /> -->
+    <!-- <link rel="preload" as="image" href="small-dark-wood.webp" media="(max-width: 767px)" /> -->
+    <!-- <link rel="preload" as="image" href="large-dark-wood.webp" media="(min-width: 768px)" /> -->
+    
+    <!-- <link rel="preload" as="image" href="small-elektrokola.webp" media="(max-width: 767px)" />
+    <link rel="preload" as="image" href="large-elektrokola.webp" media="(min-width: 768px)" /> -->
 </head>
 
-<body>
+<body class="background">
 
     <main>
-        <header class="title-text-with-shadow">
+        <header class="myheader">
             <h1>Chata Ostružina &amp; Půjčovna Elektrokol</h1>
         </header>
         
         <section class="gallery">
             <figure>
-                <img src="chata-ostruzina.webp" alt="Chata Ostružina" />
+                <!-- <img src="chata-ostruzina.webp" alt="Chata Ostružina" /> -->
+                <img
+                    src="chata-ostruzina.jpg"
+                    srcset="large-chata-ostruzina.webp 1024w, small-chata-ostruzina.webp 600w"
+                    sizes="(max-width: 600px) 100vw, 50vw"
+                    alt="Chata Ostružina"
+                />
                 <figcaption>Chata Ostružina</figcaption>
             </figure>
             
             <figure>
-                <img src="elektrokola.webp" alt="Elektrokolo k pronájmu" />
+                <img
+                    src="elektrokola.jpg"
+                    srcset="large-elektrokola.webp 1024w, small-elektrokola.webp 600w"
+                    sizes="(max-width: 600px) 100vw, 50vw"
+                    alt="Půjčovna Elektrokol"
+                />
                 <figcaption>Půjčovna Elektrokol</figcaption>
             </figure>
         </section>
