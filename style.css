@@ -16,7 +16,6 @@ body {
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-image: url("drevo.webp");   
     background-size: cover;                    
     background-position: center;
     background-repeat: no-repeat;
@@ -24,6 +23,7 @@ body {
     color: #e6e6e6;
     padding: 20px;
 }
+
 
 
 main {
@@ -45,13 +45,46 @@ header {
 */
 header {
     text-align: center;
-    background-image: url("drevo_1.webp"); /* Your background image */
+    background-image: url("small-bright-wood.webp"); /* Your background image */
     background-size: cover;                  /* Ensures it fills the header */
     background-position: center;             /* Center the image */
     color: white;
     padding: 40px 20px;
     border-radius: 10px;
+    text-shadow: 
+        -2px -2px 0 #333333,
+        2px -2px 0 #333333,
+        -2px  2px 0 #333333,
+        2px  2px 0 #333333;
 }
+
+header {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: white;
+}
+
+.myheader {
+    text-align: center;
+    background-image: url("small-bright-wood.webp"); /* Your background image */
+    background-size: cover;                  /* Ensures it fills the header */
+    background-position: center;             /* Center the image */
+    color: white;
+    padding: 40px 20px;
+    border-radius: 10px;
+    text-shadow: 
+        -2px -2px 0 #333333,
+        2px -2px 0 #333333,
+        -2px  2px 0 #333333,
+        2px  2px 0 #333333;
+}
+
+.background {
+    background-image: url("large-dark-wood.webp"); /* default for mobile */
+}
+
+
 
 h1 {
     font-size: 1.8rem;
@@ -96,7 +129,7 @@ h1 {
 
 .contact {
     text-align: center;
-    background-image: url("drevo_1.webp"); /* Your background image */
+    background-image: url("small-bright-wood.webp"); /* Your background image */
     background-size: cover;                  /* Ensures it fills the header */
     background-position: center;             /* Center the image */
     padding: 25px 20px;
@@ -116,6 +149,36 @@ footer {
     color: #e6e6e6;
 }
 
+.hero {
+    background-image: url("small-dark-wood.webp"); /* default for mobile */
+    background-size: cover;
+    background-position: center;
+}
+
+/* Mobile only */
+@media (max-width: 767px) {
+    .header {
+        background-image: url("small-bright-wood.webp");
+    }
+    
+    .body {
+        background-image: url('small-dark-wood.webp');
+    }
+    
+    .contact {
+        background-image: url("small-bright-wood.webp");
+    }
+    
+    .myheader {
+        background-image: url("small-bright-wood.webp");
+    }
+    
+    .background {
+        background-image: url("small-dark-wood.webp");
+    }
+}
+
+
 /* Responsive design */
 @media (min-width: 768px) {
     .gallery {
@@ -126,7 +189,42 @@ footer {
     .gallery figure {
         width: 45%;
     }
+    
+    .body {
+        background-image: url("large-dark-wood.webp"); /* desktop */
+    }
+    
+    .header {
+        background-image: url("large-bright-wood.webp"); /* Your background image */
+        
+    }
+    
+    .contact {
+        background-image: url("large-bright-wood.webp"); /* Your background image */
+    }
+    
+    .hero {
+        background-image: url("large-dark-wood.webp"); /* default for mobile */
+    }
+    
+    .myheader {
+        background-image: url("large-bright-wood.webp");
+    }
+    
+    .background {
+        background-image: url("large-dark-wood.webp"); /* default for mobile */
+    }
 }
+
+
+
+@media screen and (max-width: 600px) {
+  th, td {
+    padding: 10px 12px;
+    font-size: 14px;
+  }
+}
+
 .text-with-shadow {
     color: white;
     text-shadow: 
@@ -134,15 +232,6 @@ footer {
         1px -1px 0 #1a1a1a,
         -1px  1px 0 #1a1a1a,
         1px  1px 0 #1a1a1a;
-}
-
-.title-text-with-shadow {
-    color: white;
-    text-shadow: 
-        -2px -2px 0 #333333,
-        2px -2px 0 #333333,
-        -2px  2px 0 #333333,
-        2px  2px 0 #333333;
 }
 
 .pricing-section {
@@ -181,12 +270,7 @@ th {
     color: white;
 }
 
-@media screen and (max-width: 600px) {
-  th, td {
-    padding: 10px 12px;
-    font-size: 14px;
-  }
-}
+
 
 td:first-child {
   text-align: left;
